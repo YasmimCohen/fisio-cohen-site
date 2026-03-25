@@ -1,9 +1,9 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Fisioterapia Domiciliar | Yasmim Cohen</title>
+  <title>Fisioterapia Domiciliar em Niterói | Yasmim Cohen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -15,34 +15,62 @@
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
-      padding: 20px;
+      padding: 30px 20px;
     }
 
-    h1, h2 {
+    h1 {
       color: white;
+      font-size: 42px;
+      line-height: 1.2;
+    }
+
+    h2 {
+      color: black;
+      font-size: 28px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .hero p {
+      color: rgba(255,255,255,0.9);
+      font-size: 18px;
+      max-width: 600px;
     }
 
     .card {
       background: white;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 22px;
+      border-radius: 14px;
       margin-top: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
     }
 
     .btn {
       display: inline-block;
       margin-top: 15px;
-      padding: 12px 20px;
-      border-radius: 8px;
+      padding: 14px 22px;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.2s;
     }
 
     .btn-primary {
       background: white;
       color: black;
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.05);
     }
 
     .btn-secondary {
@@ -52,9 +80,8 @@
 
     .section-white {
       background: white;
-      color: black;
-      padding: 40px 20px;
-      margin-top: 40px;
+      padding: 60px 20px;
+      margin-top: 50px;
     }
 
     .grid {
@@ -73,10 +100,11 @@
       right: 20px;
       background: #25D366;
       color: white;
-      padding: 15px;
+      padding: 16px;
       border-radius: 50%;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
   </style>
 
@@ -84,16 +112,16 @@
 
 <body>
 
-<div class="container">
- <h1>Fisioterapia domiciliar em Niterói | RPG, dor e reabilitação</h1>
+<div class="container hero">
+  <h1>Fisioterapia domiciliar em Niterói | RPG, dor e reabilitação</h1>
 
   <p>
-    Yasmim Cohen — fisioterapeuta com atendimento domiciliar em Niterói.
-    Atendimento individualizado com foco em resultado, segurança e qualidade de vida.
+    Atendimento fisioterapêutico domiciliar com foco em dor, postura e recuperação funcional.
+    Tratamento individualizado, com segurança, técnica e acompanhamento profissional.
   </p>
 
   <a class="btn btn-primary" href="https://wa.me/5521995623498" target="_blank">
-    Agendar avaliação
+    Agendar avaliação pelo WhatsApp
   </a>
 
   <a class="btn btn-secondary" href="https://www.instagram.com/fisio_cohen/" target="_blank">
@@ -101,9 +129,10 @@
   </a>
 
   <div class="card">
-    <h2>Atendimento domiciliar</h2>
+    <h2>Atendimento individualizado com foco em resultado, segurança e qualidade de vida.</h2>
     <p>
-      Sessões realizadas no conforto da sua casa, com foco em evolução real e acompanhamento profissional.
+      Sessões realizadas no conforto da sua casa, com avaliação individualizada,
+      planejamento terapêutico e acompanhamento contínuo da evolução.
     </p>
   </div>
 </div>
@@ -114,12 +143,35 @@
 
 ```
 <div class="grid grid-3">
-  <div class="card">RPG (Postura e dores)</div>
-  <div class="card">Reabilitação pós-operatória</div>
-  <div class="card">Fisioterapia para idosos</div>
-  <div class="card">Fisioterapia infantil</div>
-  <div class="card">Exercícios terapêuticos</div>
-  <div class="card">Atendimento domiciliar</div>
+  <div class="card">
+    <strong>RPG (Reeducação Postural Global)</strong><br><br>
+    Correção postural, alívio de dores e melhora do alinhamento corporal.
+  </div>
+
+  <div class="card">
+    <strong>Reabilitação pós-operatória</strong><br><br>
+    Recuperação funcional segura e progressiva após cirurgias.
+  </div>
+
+  <div class="card">
+    <strong>Fisioterapia para idosos</strong><br><br>
+    Mobilidade, equilíbrio e prevenção de quedas.
+  </div>
+
+  <div class="card">
+    <strong>Fisioterapia infantil</strong><br><br>
+    Desenvolvimento motor com abordagem individualizada.
+  </div>
+
+  <div class="card">
+    <strong>Exercícios terapêuticos</strong><br><br>
+    Protocolos personalizados para dor e funcionalidade.
+  </div>
+
+  <div class="card">
+    <strong>Atendimento domiciliar</strong><br><br>
+    Praticidade, conforto e cuidado individualizado.
+  </div>
 </div>
 ```
 
@@ -127,13 +179,13 @@
 </div>
 
 <div class="container">
-  <h2>Para quem é</h2>
+  <h2 style="color:white;">Para quem é</h2>
 
   <div class="grid grid-2">
     <div class="card">Dores na coluna e postura</div>
     <div class="card">Pós-operatório</div>
-    <div class="card">Idosos</div>
-    <div class="card">Crianças</div>
+    <div class="card">Idosos (mobilidade e equilíbrio)</div>
+    <div class="card">Crianças (desenvolvimento motor)</div>
   </div>
 </div>
 
@@ -145,16 +197,21 @@
 <ul>
   <li>Atendimento domiciliar em Niterói</li>
   <li>Tratamento individualizado</li>
-  <li>Uso de RPG</li>
-  <li>Foco em dor e função</li>
+  <li>Aplicação de RPG</li>
+  <li>Foco em dor, postura e função</li>
+  <li>Atendimento profissional e humanizado</li>
 </ul>
 ```
 
   </div>
 </div>
 
-<div class="container">
-  <h2>Agende sua avaliação</h2>
+<div class="container" style="text-align:center;">
+  <h2 style="color:white;">Agende sua avaliação</h2>
+
+  <p style="color:white;">
+    Atendimento mediante agendamento. Entre em contato para disponibilidade.
+  </p>
 
   <a class="btn btn-primary" href="https://wa.me/5521995623498" target="_blank">
     Falar no WhatsApp
@@ -165,27 +222,8 @@
   💬
 </a>
 
-<div class="container" style="text-align:center;">
-<h2 style="color:white;">Agende sua avaliação</h2>
-
-<p style="color:white;">
-Entre em contato agora e entenda como o tratamento pode te ajudar.
-</p>
-
-<a class="btn btn-primary" href="https://wa.me/5521995623498" target="_blank">
-Falar no WhatsApp
-</a>
-</div>
-
-<a class="whatsapp" href="https://wa.me/5521995623498" target="_blank">
-💬
-</a>
-
 </body>
 </html>
 
-
-</body>
-</html>
 
 
